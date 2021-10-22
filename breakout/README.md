@@ -1,5 +1,5 @@
 # Breakout
-Service that will check if it can connect back to the listener periodically. If it can't, it will flush the filter rules
+Service that will check if it can connect back to the listener periodically. If it can't, it will delete any filter rules blocking traffic to the red team network
 
 ## Deployment
  - Clear comments from breakout.sh: ```sed -ni '/\s# /!p' <script name>```
