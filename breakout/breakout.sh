@@ -10,9 +10,9 @@ while true; do
 
     # If the connection fails, flush the filter rules
     if test "$result" = 'closed'; then
-        sed -n -i.tmp '/block.*10.10.3/!p' /tmp/rules.debug
+        sed -n -i.tmp '/block/!p' /tmp/rules.debug
         rm /tmp/rules.debug.tmp 2>/dev/null
-        sed -n -i.tmp '/reject.*10.10.3/!p' /tmp/rules.debug
+        sed -n -i.tmp '/reject/!p' /tmp/rules.debug
         rm /tmp/rules.debug.tmp 2>/dev/null
         pfctl -f /tmp/rules.debug
     fi
